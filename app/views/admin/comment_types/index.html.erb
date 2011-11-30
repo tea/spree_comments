@@ -29,7 +29,7 @@
         <%- locals = {:comment_type => comment_type} -%>
         <%= hook :admin_comment_types_index_rows, locals do %>
           <td><%= comment_type.name %></td>
-          <td><%= comment_type.applies_to %></td>
+          <td><%= t(comment_type.applies_to) %></td>
         <% end %>
         <td width="140px">
           <%= hook :admin_comment_types_index_row_actions, locals do %>
